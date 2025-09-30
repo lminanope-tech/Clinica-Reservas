@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Salud Integral - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primario">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <strong>Clínica Salud Integral</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacionPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navegacionPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="especialidades.html">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserva.html">Reservar Cita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="citas.html">Mis Citas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container-fluid px-0">
+        <div id="carruselClinica" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselClinica" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carruselClinica" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carruselClinica" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/recepcion.png" class="d-block w-100" alt="Recepción de la clínica">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Recepción Moderna</h5>
+                        <p>Nuestro equipo está listo para atenderte</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ConsultorioE.png" class="d-block w-100" alt="Consultorio médico">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Consultorios Equipados</h5>
+                        <p>Tecnología de última generación</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/LaboratorioC.png" class="d-block w-100" alt="Laboratorio clínico">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Laboratorio Completo</h5>
+                        <p>Resultados precisos y rápidos</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselClinica" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselClinica" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 titulo-principal">Clínica Salud Integral</h1>
+                <p class="lead texto-descripcion">
+                    Más de 20 años cuidando de tu salud y la de tu familia con profesionalidad 
+                    y calidez humana. Contamos con especialistas de primer nivel y tecnología 
+                    médica avanzada.
+                </p>
+                <a href="reserva.html" class="btn btn-primario btn-lg">Reservar Cita</a>
+                       
+                <div class="contenedor-imagen-destacada">
+                    <img src="img/ClinicaSalud.png" alt="Nuestro equipo médico" class="imagen-destacada">
+                    <p class="texto-imagen-destacada">Nuestro equipo de profesionales altamente calificados</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card sombra-card">
+                    <div class="card-body text-center p-4">
+                        <h3 class="card-title">Horarios de Atención</h3>
+                        <ul class="list-unstyled">
+                            <li>Lunes a Viernes: 8:00 am - 8:00 pm</li>
+                            <li>Sábados: 9:00 am - 2:00 pm</li>
+                            <li>Emergencias: 24/7</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
