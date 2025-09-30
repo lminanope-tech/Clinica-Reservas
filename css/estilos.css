@@ -1,0 +1,442 @@
+:root {
+    --color-primario: #2c5aa0;
+    --color-secundario: #6c757d;
+    --color-exito: #198754;
+    --color-peligro: #dc3545;
+    --color-advertencia: #ffc107;
+    --color-info: #0dcaf0;
+    --sombra-suave: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --sombra-media: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-top: 0;
+}
+
+.bg-primario {
+    background-color: var(--color-primario) !important;
+}
+
+.btn-primario {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    color: white;
+}
+
+.btn-primario:hover {
+    background-color: #254a8a;
+    border-color: #254a8a;
+    color: white;
+}
+
+.text-primario {
+    color: var(--color-primario) !important;
+}
+
+.table-primario {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.titulo-principal {
+    color: var(--color-primario);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.texto-descripcion {
+    color: var(--color-secundario);
+    font-size: 1.1rem;
+}
+
+.sombra-card {
+    box-shadow: var(--sombra-suave);
+    transition: box-shadow 0.3s ease;
+}
+
+.sombra-card:hover {
+    box-shadow: var(--sombra-media);
+}
+
+#carruselClinica {
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 500px;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.9);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    bottom: 2rem;
+    left: 10%;
+    right: 10%;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.imagen-especialidad {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+}
+
+.contenedor-especialidad {
+    transition: transform 0.3s ease;
+}
+
+.contenedor-especialidad:hover {
+    transform: translateY(-5px);
+}
+
+.contenedor-imagen-destacada {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.imagen-destacada {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--sombra-media);
+    transition: transform 0.3s ease;
+}
+
+.imagen-destacada:hover {
+    transform: scale(1.02);
+}
+
+.texto-imagen-destacada {
+    margin-top: 1rem;
+    font-style: italic;
+    color: var(--color-secundario);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 0.2rem rgba(44, 90, 160, 0.25);
+}
+
+.is-invalid {
+    border-color: var(--color-peligro) !important;
+}
+
+.invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: var(--color-peligro);
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    padding: 1rem;
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.btn-outline-danger {
+    border-color: var(--color-peligro);
+    color: var(--color-peligro);
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--color-peligro);
+    color: white;
+}
+
+.alert {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.alert-success {
+    background-color: rgba(25, 135, 84, 0.1);
+    color: var(--color-exito);
+    border-left: 4px solid var(--color-exito);
+}
+
+#confirmacion-reserva .card {
+    border: 2px solid var(--color-exito);
+}
+
+#confirmacion-reserva .card-header {
+    background-color: var(--color-exito);
+    border-bottom: 2px solid var(--color-exito);
+}
+
+#lista-especialidades .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+#lista-especialidades .card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--sombra-media);
+}
+
+#sin-citas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.container-fluid.px-0 {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+    .carousel-item,
+    #carruselClinica {
+        height: 400px;
+    }
+    
+    .carousel-caption {
+        bottom: 1rem;
+        left: 5%;
+        right: 5%;
+        padding: 1rem;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1.3rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    
+    .titulo-principal {
+        font-size: 2rem;
+    }
+    
+    .imagen-destacada {
+        max-width: 300px;
+    }
+
+    .imagen-especialidad {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item,
+    #carruselClinica {
+        height: 300px;
+    }
+    
+    .carousel-caption {
+        bottom: 0.5rem;
+        padding: 0.75rem;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .imagen-destacada {
+        max-width: 250px;
+    }
+
+    .imagen-especialidad {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item,
+    #carruselClinica {
+        height: 250px;
+    }
+    
+    .carousel-caption {
+        position: static;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 0;
+        padding: 1rem;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+    
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .table th,
+    .table td {
+        padding: 0.5rem;
+    }
+    
+    .imagen-destacada {
+        max-width: 200px;
+    }
+
+    .imagen-especialidad {
+        height: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel-item,
+    #carruselClinica {
+        height: 200px;
+    }
+    
+    .carousel-indicators {
+        display: none;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+    
+    .imagen-destacada {
+        max-width: 180px;
+    }
+
+    .imagen-especialidad {
+        height: 120px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel-item {
+        transition-duration: 0.01ms;
+    }
+    
+    .sombra-card {
+        transition: none;
+    }
+    
+    #lista-especialidades .card {
+        transition: none;
+    }
+    
+    .imagen-destacada {
+        transition: none;
+    }
+    
+    .contenedor-especialidad {
+        transition: none;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Citas - Clínica Salud Integral</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+     <link rel="shortcut icon" href="img/logo.ico" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primario">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <strong>Clínica Salud Integral</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegacionPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navegacionPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="especialidades.html">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserva.html">Reservar Cita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="citas.html">Mis Citas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <header class="text-center mb-5">
+            <h1 class="titulo-principal">Mis Citas Reservadas</h1>
+            <p class="lead texto-descripcion">Revisa el historial de todas tus citas médicas</p>
+        </header>
+
+        <section>
+            <div class="card sombra-card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover" id="tabla-citas">
+                            <thead class="table-primario">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>DNI</th>
+                                    <th>Especialidad</th>
+                                    <th>Fecha</th>
+                                    <th>Hora</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cuerpo-tabla-citas">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="sin-citas" class="text-center py-5">
+                        <h3 class="text-muted">No tienes citas reservadas</h3>
+                        <p class="text-muted">Reserva tu primera cita médica ahora mismo.</p>
+                        <a href="reserva.html" class="btn btn-primario mt-3">Reservar Cita</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/citas.js"></script>
+</body>
+</html>
